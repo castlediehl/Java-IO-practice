@@ -30,17 +30,19 @@ public class Patient implements Serializable {
 	String name;
 	int age;
 	String hairColor;
+	transient int SSN;
 	
 	// Constructor
-	public Patient(String name, int age, String hairColor) {
+	public Patient(String name, int age, String hairColor, int SSN) {
 		this.name=name;
 		this.age=age;
 		this.hairColor=hairColor;
+		this.SSN = SSN;
 	}
 
 	@Override
 	public String toString() {
-		return "Patient [name=" + name + ", age=" + age + ", haircolor=" + hairColor + "]";
+		return "Patient [name=" + name + ", age=" + age + ", haircolor=" + hairColor + ", Social= " + SSN + "]";
 	}
 	
 	

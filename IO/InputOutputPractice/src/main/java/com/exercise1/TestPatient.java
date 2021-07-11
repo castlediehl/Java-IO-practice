@@ -32,9 +32,11 @@ public class TestPatient {
 				int age = Integer.parseInt(br.readLine());
 				System.out.println("Enter patient's haircolor: ");
 				String hairColor = br.readLine();
+				System.out.println("Enter patient's social security number: ");
+				int SSN = Integer.parseInt(br.readLine());
 			
 			// New Patient
-			Patient p1 = new Patient(name, age, hairColor);
+			Patient p1 = new Patient(name, age, hairColor, SSN);
 			
 			FileOutputStream patientsFiles = new FileOutputStream("listOfPatients.txt");
 			ObjectOutputStream objectPatient = new ObjectOutputStream(patientsFiles);

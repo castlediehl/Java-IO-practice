@@ -13,7 +13,7 @@ public class DeserializePatientsList {
 		Patient p1 = null;
 
 		try {
-			FileInputStream patientsDeserialized = new FileInputStream("./test1.txt");
+			FileInputStream patientsDeserialized = new FileInputStream("./listOfPatients.txt");
 			ObjectInputStream patientsObject = new ObjectInputStream(patientsDeserialized);
 
 			p1 = (Patient) patientsObject.readObject();
